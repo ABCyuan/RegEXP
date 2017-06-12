@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>表单验证</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+.content{
+    width: 600px;
+    height: 300px;
+    border: 1px solid red;
+    left: 400px;
+    position: relative;
+    top: 100px;
+}
+p{
+    margin-left: 48px;
+
+}
+span{
+    font-size: 12px;
+    margin-left: 3px;
+}
+em{
+    width: 50px;
+    height: 20px;
+    display: inline-block;
+    background: #ffa4c1;
+    text-align: center;
+    line-height: 20px;
+    font-style: normal;
+    font-size: 12px;
+    color: #fff;
+}
+.active{
+    background: #ff2130;
+}
+input{
+     width: 200px;
+     height: 25px;
+}
+.count{
+    font-size: 12px;
+    width: 100px;
+    height: 15px;
+}
+.content div{
+    height: 55px;
+}
+.msg{
+    margin-left: 33px;
+}
+input[type=submit]{
+    width: 150px;
+    margin-left: 100px;
+    background: #577dff;
+    outline: none;
+}
+</style>
+</head>
+<body>
+<div class="content">
+    <form action="">
+    <div class="msg">姓名：<input type="text">
+        <span class="name_message"></span>
+        <p class="count"></p>
+    </div>
+    <div class="msg">邮箱：<input type="email"><span class="email_message"></span></div>
+    <div class="msg">密码：<input type="password">
+        <span class="password_message"></span>
+        <p><em class="active">弱</em><em>中</em><em>强</em></p>
+    </div>
+    <div>确认密码：<input type="password" disabled>
+        <span class="spassword_message"></span>
+    </div>
+    <div><input type="submit" value="提交信息"></div>
+    </form>
+</div>
+</body>
+<script src="RE.js"></script>
+</html>
